@@ -51,7 +51,7 @@ public class ParameterAop {
     //실행 후 반환값
     @AfterReturning(value = "cut()", returning = "obj")
     public void afterReturn(JoinPoint joinPoint, Object obj){
-        System.out.println("return >> joinPoint = " + joinPoint + ", obj = " + obj);
+        System.out.println("return >> obj = " + obj);
     }
 
 }
